@@ -263,3 +263,5 @@ async def helpme(ctx):
         "`!helpme` - Show this help message\n"
         "Use the buttons that appear during party sessions for UI control."
     )
+
+bot.run(DISCORD_TOKEN)
