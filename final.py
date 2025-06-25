@@ -115,11 +115,15 @@ async def createchar(ctx, name: str, race: str, char_class: str):
         "personality": "",
         "inventory": []
     }
-    await ctx.send(f"Character created for {ctx.author.display_name}:
+    await ctx.send(
+        f"Character created for {ctx.author.display_name}:
 "
-                   f"Name: `{name}`
-Race: `{race}`
-Class: `{char_class}`")
+        f"Name: `{name}`
+"
+        f"Race: `{race}`
+"
+        f"Class: `{char_class}`"
+    )
 
 @bot.command()
 async def mychar(ctx):
@@ -263,5 +267,6 @@ async def helpme(ctx):
         "`!helpme` - Show this help message\n"
         "Use the buttons that appear during party sessions for UI control."
     )
+
 
 bot.run(DISCORD_TOKEN)
